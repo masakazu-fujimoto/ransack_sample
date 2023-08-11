@@ -34,9 +34,8 @@
 
 <%= link_to 'New User', new_user_path %>
 
-<h1>ユーザー検索</h1>
 <%= search_form_for @q, url: search_users_path do |f| %>
-  <%= f.label :name_cont, 'ユーザー名' %>
-  <%= f.search_field :name_cont %>
+  <%= f.label :name_eq, 'ユーザー名' %>
+  <%= f.search_field :name_eq %>
   <%= f.submit '検索' %>
 <% end %>
