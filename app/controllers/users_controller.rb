@@ -3,7 +3,7 @@ class UsersController < ApplicationController
   before_action :set_q, only: [:index, :search]
 
   def index
-    @users = User.all
+    @users = @q.result
   end
 
   def show
