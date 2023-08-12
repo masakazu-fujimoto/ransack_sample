@@ -35,7 +35,7 @@
 <%= link_to 'New User', new_user_path %>
 
 <%= search_form_for @q, url: search_users_path do |f| %>
-  <%= search_field_tag "q[name_not_in][]" %>
-  <%= search_field_tag "q[name_not_in][]" %>
+  <%= search_field_tag "q[age_lt_any][]" %>
+  <%= search_field_tag "q[age_lt_any][]" %>
   <%= f.submit '検索' %>
 <% end %>
