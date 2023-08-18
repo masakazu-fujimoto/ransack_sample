@@ -35,7 +35,7 @@
 <%= link_to 'New User', new_user_path %>
 
 <%= search_form_for @q, url: search_users_path do |f| %>
-  <%= f.label :gender_true, '性別' %>
-  <%= f.search_field :gender_true %>
+  <%= f.label :gender_false, '性別' %>
+  <%= f.search_field :gender_false %>
   <%= f.submit '検索' %>
 <% end %>
